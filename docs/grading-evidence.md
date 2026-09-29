@@ -4,9 +4,9 @@ Danh sách chính thức, quy tắc chụp và cách nộp nằm tại [SUBMISSI
 
 ## Evidence runtime bắt buộc
 
-- [ ] Kết quả cuối của `python -m pytest -q`.
-- [ ] `validate_logs.py` đạt tối thiểu 80/100.
-- [ ] `validate_dashboard.py` đạt 6/6.
+- [ x] Kết quả cuối của `python -m pytest -q`.
+- [ x] `validate_logs.py` đạt tối thiểu 80/100.
+- [ x] `validate_dashboard.py` đạt 6/6.
 - [ ] Structured log có `correlation_id` và metadata.
 - [ ] PII giả đã được redact trong output thực tế.
 - [ ] Tên project Langfuse cá nhân và danh sách tối thiểu 10 traces do học viên tự tạo.

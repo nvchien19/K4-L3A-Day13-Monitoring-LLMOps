@@ -1,0 +1,8 @@
+INFO:     Loading environment from '.env'
+INFO:     Started server process [23276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Error while fetching prompt 'day13-chat-label:candidate': timed out
+Returning fallback prompt for 'day13-chat-label:candidate' due to fetch error: timed out
+Failed to export spans batch code: None, reason: HTTPSConnectionPool(host='cloud.langfuse.com', port=443): Read timed out. (read timeout=0)
