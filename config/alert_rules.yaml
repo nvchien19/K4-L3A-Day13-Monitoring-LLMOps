@@ -1,25 +1,25 @@
 alerts:
-  - name: TODO_alert_1
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: high-tail-latency-p95
+    severity: high
+    condition: 'latency P95 over event == "response_sent" > 3000ms'
+    duration: 5m
     type: symptom-based
-    channel: slack
-    owner: TODO
+    channel: slack:#day13-alerts
+    owner: nguyen-van-chien
     runbook: docs/alerts.md#alert-1
-  - name: TODO_alert_2
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: elevated-error-rate
+    severity: critical
+    condition: 'error_rate_pct over request_received/request_failed > 2%'
+    duration: 5m
     type: symptom-based
-    channel: slack
-    owner: TODO
+    channel: slack:#day13-alerts
+    owner: nguyen-van-chien
     runbook: docs/alerts.md#alert-2
-  - name: TODO_alert_3
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: quality-proxy-drop
+    severity: warning
+    condition: 'mean(quality_score) over event == "response_sent" < 0.75'
+    duration: 15m
     type: symptom-based
-    channel: slack
-    owner: TODO
+    channel: slack:#day13-alerts
+    owner: nguyen-van-chien
     runbook: docs/alerts.md#alert-3
